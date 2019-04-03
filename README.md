@@ -1,4 +1,4 @@
-##Weather application created using React
+## Weather application created using React
 
 ### Available Scripts
 
