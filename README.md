@@ -1,4 +1,6 @@
-## Available Scripts
+##Weather application created using React
+
+### Available Scripts
 
 In the project directory, you can run:
 
