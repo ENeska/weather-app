@@ -1,0 +1,22 @@
+@import "mixins/screen";
+
+*{
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  background-color: #648cff;
+}
+
+.wrapper {
+  padding: 0 10px;
+  @include screen-desktop {
+    max-width: 1170px;
+    margin: auto;
+  }
+}

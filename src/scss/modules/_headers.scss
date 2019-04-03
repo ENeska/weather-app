@@ -1,0 +1,80 @@
+@import "../_variables.scss";
+@import "../mixins/screen";
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+  font-family: Arial, serif;
+  padding: 30px 0 50px 0;
+  width: 100%;
+  @include screen-phone-l {
+    margin-bottom: 30px;
+    flex-direction: row;
+  }
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #648cff;
+  align-items: center;
+  color: white;
+  margin-top: 30px;
+  @include screen-phone-l {
+    margin-top: 0;
+    width: 75%;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  &:after {
+    content: "";
+    background-color: white;
+    height: 2px;
+    left: 0;
+    position: relative;
+    bottom: -10px;
+    width: 90%;
+    @include screen-phone-l {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding-bottom: 10px;
+
+    a {
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: #ffac81;
+      }
+    }
+
+    @include screen-phone-l {
+      padding-bottom: 0;
+    }
+  }
+}
+p {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  @include screen-phone-l {
+    text-align: left;
+    width: 25%;
+  }
+
+  span {
+    color: #ffac81;
+  }
+}

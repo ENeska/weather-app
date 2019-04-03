@@ -1,0 +1,50 @@
+@import "../_variables.scss";
+@import "../mixins/screen";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  align-items: center;
+  align-content: center;
+  @include screen-phone-l {
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__input {
+    background-color: #ff863f;
+    border: none;
+    border-radius: 3px;
+    height: 35px;
+    color: white;
+    padding-left: 5px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    &:focus {
+      background-color: #fffded;
+      border: none;
+      outline: none;
+      color: #f4650e;
+    }
+    &::placeholder {
+      color: white;
+    }
+    @include screen-phone-l {
+      margin: 0 10px 0 0;
+    }
+  }
+  &__button {
+    background-color: #4466c9;
+    border: none;
+    height: 35px;
+    font-size: 17px;
+    padding: 0 20px;
+    border-radius: 3px;
+    color: white;
+    &:hover{
+      color: #4466c9;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+}
